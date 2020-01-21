@@ -2,9 +2,7 @@
 For on-call engineers
 
 * <input type='checkbox'> Acknowledge the event in PagerDuty
-* <input type='checkbox'>  <details><summary>Open a Jira ticket on the [Production Board](https://broadworkbench.atlassian.net/secure/RapidBoard.jspa?rapidView=15&projectKey=PROD&selectedIssue=PROD-324)</summary>
-    - Create a new ticket with fields summary, description, CLIA Impact (TBD if not known).  Set severity based on [Terra Support SLA](https://docs.google.com/spreadsheets/d/1Qcfve-nHlS0Udq31nZlfwBDjguhsJ8sxm0Q7RqfZM8o/edit?usp=sharing), defaulting to “Blocker”
-    - Assign to yourself if you are investigating the issue</details>
+* <input type='checkbox'>  blah
      
  * <input type='checkbox'> <details><summary>Report in the #workbench-oncall slack channel that you are investigating event</summary>
     - If it impacts many users:
@@ -15,7 +13,7 @@ For on-call engineers
         - Off-hours:  There is no dedicated support schedule. Ultimately, the email to the user should explain the impact to them, the time it occurred, what workspace/submission/ was impacted, ways to remediate the issue, and how we are working to prevent this in the future. The tone should be apologetic and helpful.</details>
 
 * <input type='checkbox'> Return the affected systems to normal.
-* <input type='checkbox'>Update the Jira ticket
+* <input type='checkbox'><details<summary>Update the Jira ticket</summary>
     - Update CLIA Impact*: 
         - Downtime duration
         - Impact on the system. 
@@ -26,7 +24,7 @@ For on-call engineers
         - Link to pager duty alert if it was an automated alert. Or link to slack message that first indicated the issue. This is to get as close to time of incident for engineers that will follow up the investigation and dig into the logs.
         - Gather logs
     - Error Failure Time: Time of error failure as that can 
-    - Origin: Automated alerting systems such as New Relic or human (Support team, CS)
+    - Origin: Automated alerting systems such as New Relic or human (Support team, CS)</details>
 * <input type='checkbox'> Mark the ticket Remediated
 * <input type='checkbox'> If a banner has been put up, confirm that a support specialist can take down the banners and update the Service Incident.
 
