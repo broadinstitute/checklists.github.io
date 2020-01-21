@@ -2,9 +2,9 @@
 For on-call engineers
 
 - <input type='checkbox'> Acknowledge the event in PagerDuty
-- <input type='checkbox'> <details><summary>Open a Jira ticket on the [Production Board](https://broadworkbench.atlassian.net/secure/RapidBoard.jspa?rapidView=15&projectKey=PROD&selectedIssue=PROD-324)</summary>
+- <input type='checkbox'> Open a Jira ticket on the [Production Board](https://broadworkbench.atlassian.net/secure/RapidBoard.jspa?rapidView=15&projectKey=PROD&selectedIssue=PROD-324)</summary>
     - Create a new ticket with fields summary, description, CLIA Impact (TBD if not known).  Set severity based on [Terra Support SLA](https://docs.google.com/spreadsheets/d/1Qcfve-nHlS0Udq31nZlfwBDjguhsJ8sxm0Q7RqfZM8o/edit?usp=sharing), defaulting to “Blocker”
-    - Assign to yourself if you are investigating the issue</details>
+    - Assign to yourself if you are investigating the issue
 - <input type='checkbox'> Report in the #workbench-oncall slack channel that you are online and investigating event
     - If it impacts many users:
         - Daytime: Confirm that a support specialist is aware of the issue (slack #dsde-comms or @dspsupportteam in #workbench-resilience) and can put up a FireCloud/Terra [Service Incident](https://broadinstitute.zendesk.com/hc/en-us/sections/360003692231-Service-Notifications) and banner. Provide the Jira ticket and a description of the user impact.
