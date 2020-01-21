@@ -1,8 +1,8 @@
 # Incident Response Checklist
 For on-call engineers
 
-- <input type='checkbox'> Acknowledge the event in PagerDuty
-- <input type='checkbox'> <details><summary>Open a Jira ticket on the [Production Board](https://broadworkbench.atlassian.net/secure/RapidBoard.jspa?rapidView=15&projectKey=PROD&selectedIssue=PROD-324)</summary>
+<ul> <input type='checkbox'> Acknowledge the event in PagerDuty
+<ul> <input type='checkbox'> <details><summary>Open a Jira ticket on the [Production Board](https://broadworkbench.atlassian.net/secure/RapidBoard.jspa?rapidView=15&projectKey=PROD&selectedIssue=PROD-324)</summary>
     - Create a new ticket with fields summary, description, CLIA Impact (TBD if not known).  Set severity based on [Terra Support SLA](https://docs.google.com/spreadsheets/d/1Qcfve-nHlS0Udq31nZlfwBDjguhsJ8sxm0Q7RqfZM8o/edit?usp=sharing), defaulting to “Blocker”
     - Assign to yourself if you are investigating the issue
 </details>
