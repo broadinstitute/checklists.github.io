@@ -11,9 +11,8 @@ For on-call engineers
     - Impacts a single user (the user will need to be directly contacted)
         - Daytime: contact a support specialist for assistance (slack #dsde-comms or @dspsupportteam in #workbench-resilience). 
         - Off-hours:  There is no dedicated support schedule. Ultimately, the email to the user should explain the impact to them, the time it occurred, what workspace/submission/ was impacted, ways to remediate the issue, and how we are working to prevent this in the future. The tone should be apologetic and helpful.</details>
-
 * <input type='checkbox'> Return the affected systems to normal.
-* <input type='checkbox'><details<summary>Update the Jira ticket</summary>
+* <input type='checkbox'><details><summary>Update the Jira ticket</summary>
     - Update CLIA Impact*: 
         - Downtime duration
         - Impact on the system. 
