@@ -1,4 +1,4 @@
-* Incident Management Checklist*
+# Incident Management Checklist
 For on-call engineers
 
 - [ ] Acknowledge the event in PagerDuty
