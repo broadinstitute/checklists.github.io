@@ -1,7 +1,7 @@
 # Incident Response Checklist
 For on-call engineers
 
-## During an event
+## During an incident
 - <input type='checkbox'> **Acknowledge the event in PagerDuty**
 - <input type='checkbox'> **Open a Jira ticket on the [Production Board](https://broadworkbench.atlassian.net/secure/RapidBoard.jspa?rapidView=15&projectKey=PROD&selectedIssue=PROD-324)**
     - Create a new ticket with fields summary, description, CLIA Impact (TBD if not known).  Set severity based on [Terra Support SLA](https://docs.google.com/spreadsheets/d/1Qcfve-nHlS0Udq31nZlfwBDjguhsJ8sxm0Q7RqfZM8o/edit?usp=sharing), defaulting to “Blocker”
@@ -13,9 +13,9 @@ For on-call engineers
     - Impacts a single user (the user will need to be directly contacted)
         - Daytime: contact a support specialist for assistance (slack #dsde-comms or @dspsupportteam in #workbench-resilience). 
         - Off-hours:  There is no dedicated support schedule. Ultimately, the email to the user should explain the impact to them, the time it occurred, what workspace/submission/ was impacted, ways to remediate the issue, and how we are working to prevent this in the future. The tone should be apologetic and helpful.
-- <input type='checkbox'> **Oversee the remediation of the issue, returning the affected systems to normal**
+- <input type='checkbox'> **Oversee the remediation of the issue, returning the affected systems to normal.**  Follow steps in the General Troubleshooting Playbook.
 
-## After the event
+## After the incident
 - <input type='checkbox'> **Update the Jira ticket with relevant information**
     - Update CLIA Impact*: 
         - Downtime duration
