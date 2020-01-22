@@ -29,11 +29,12 @@ For on-call engineers
     - Set Origin: Automated alerting systems such as New Relic or human (Support team, CS)
 - <input type='checkbox'> **Move the ticket to "Remediated"**
 - <input type='checkbox'> **If a banner has been put up, confirm that a support specialist can take down the banners and update the Service Incident.**
-- <input type='checkbox'> **Create a post-mortem template in the [Post Mortems Folder](https://drive.google.com/drive/u/0/folders/1-tGmN1KZqDIBePxc-ZleNv4meXoyA9ET) using the [template](https://docs.google.com/document/d/1BLtWVeWrzCpfEZSjSlSnTeUsJSB64rEd2WkSUgP7FZc/edit)**
+- <input type='checkbox'> **Create a post-mortem notes in the [Post Mortems Folder](https://drive.google.com/drive/u/0/folders/1-tGmN1KZqDIBePxc-ZleNv4meXoyA9ET) using the [template](https://docs.google.com/document/d/1BLtWVeWrzCpfEZSjSlSnTeUsJSB64rEd2WkSUgP7FZc/edit)**
     - Use the date and a summary of the incident as the title
     - Fill out a draft of the incident timeline, to the best of your ability
     - Include a list of people who were heavily involved in remediation and should be present at the post-mortem
 - <input type='checkbox'> **Create an epic to track post-mortem actions and move to "Needs Post-Mortem"**
-    - Title it "Post Mortem for <issue summary>
+    - Title it "Post Mortem for ______" (issue summary)
     - Link the incident issue to the epic
+    - Include a link to the post-mortem notes in the description
 
