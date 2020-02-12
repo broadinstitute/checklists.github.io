@@ -3,8 +3,8 @@ For on-call engineers
 
 ## During an incident
 - <input type='checkbox'> **Acknowledge the event in PagerDuty**
-- <input type='checkbox'> **Open a Jira ticket on the [Production Board](https://broadworkbench.atlassian.net/secure/RapidBoard.jspa?rapidView=15&projectKey=PROD&selectedIssue=PROD-324)**
-    - Create a new ticket with fields summary, description, CLIA Impact (TBD if not known).  Set severity based on [Terra Support SLA](https://docs.google.com/spreadsheets/d/1Qcfve-nHlS0Udq31nZlfwBDjguhsJ8sxm0Q7RqfZM8o/edit?usp=sharing), defaulting to “Blocker”
+- <input type='checkbox'> **From the PagerDuty incident, click *More Actions* -> *Create JIRA Issue* to create a ticket on the [Production Board](https://broadworkbench.atlassian.net/secure/RapidBoard.jspa?rapidView=15&projectKey=PROD&selectedIssue=PROD-324)**
+    - This will create a Jira ticket that includes some metadata about the incident, including start-time.  Update the summary and description as needed.
     - Assign to yourself if you are investigating the issue
 - <input type='checkbox'>**Report in the #workbench-oncall slack channel that you are investigating event**
     - If it impacts many users:
@@ -20,11 +20,10 @@ For on-call engineers
     - Update CLIA Impact*: 
         - Downtime duration
         - Impact on the system. 
-    - Set Component: Component/ Service that is impacted.
+    - Update components/services impacted
     - Update Description:
         - Update what was the issue
         - Enter how it was resolved
-        - Link to PagerDuty alert if it was an automated alert. Or link to slack message that first indicated the issue. This is to get as close to time of incident for engineers that will follow up the investigation and dig into the logs.
         - Gather logs
     - Set Origin: Automated alerting systems such as New Relic or human (Support team, CS)
 - <input type='checkbox'> **Move the ticket to "Remediated"**
