@@ -1,0 +1,5 @@
+Objective
+Standardize and document the hotfix release process for critical and blocking issues. 
+Any issue that warrants a release qualifies as an incident. If an incident requires code changes, 
+it must follow the hotfix release checklist procedure.
+ 
