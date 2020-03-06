@@ -34,6 +34,6 @@ For on-call engineers
     - Include a list of people who were heavily involved in remediation and should be present at the post-mortem
 - <input type='checkbox'> **Create an epic to track post-mortem actions and move to "Needs Post-Mortem"**
     - Title it "Post Mortem for ______" (issue summary)
-    - Link the incident issue to the epic
+    - Link the incident bug to the epic as "blocks"
     - Include a link to the post-mortem notes in the description
 
