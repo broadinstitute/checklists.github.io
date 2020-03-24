@@ -2,15 +2,29 @@
 
 For triggering a manual on-call incident.
 
-## When to trigger
+## What are manual incidents?
 
-Manual incidents should be triggered when a production outage is occurring but has not set off any of our automated alerts.  
-Incidents are [defined in our SDLC](https://docs.google.com/document/d/1rLUMry-VAWsewEz2mOLfdzH-7UKxuIn35VlzZH90CcI/edit#).  They can be reported by users, or caught by our own interactions in Terra. 
+Manual incidents are triggered when a production outage occurs but does not set off any of our automated alerts.  Incidents are [defined in our SDLC](https://docs.google.com/document/d/1rLUMry-VAWsewEz2mOLfdzH-7UKxuIn35VlzZH90CcI/edit#).  They can be reported by users, or caught by our own interactions in Terra. 
 
-For the purpose of collecting metrics around our incident response, PagerDuty should be the source of truth for incident start time. 
-Therefore, incidents should be tracked in Pagerduty BEFORE they are tracked in Jira or remediated. 
+If you've discover what you think is a production incident that is NOT already being investigated (check the #workbench-oncall channel), follow the steps below to raise the flag:
 
-## To raise the flag
-- <input type='checkbox'> **Verify that someone/something else has not triggered the incident in PagerDuty**
-- <input type='checkbox'> **Type `/pd trigger` in Slack to manually trigger a PagerDuty alert.**  Include any information you know about the issue: when it began, how it was discovered, what's broken, any ideas about why.
-    - This will alert the on-call engineer, who is responsible for tracking the issue and overseeing remediation, and kick off the incident response process.
+## If it's after hours
+- <input type='checkbox'> **Type `/pd trigger` in Slack to manually trigger a PagerDuty alert.**  
+    - Include any information you know about the issue: when it began, how it was discovered, what's broken, any ideas about why.
+    - This will alert the on-call engineer, who is responsible for overseeing incident response
+
+## If you're Frontline Support or one of the portals (AoU, SCP)
+- <input type='checkbox'> **Contact user liason (UL) to triage severity.**  With UL, decide if it's a production issue and its category using the [SDLC](https://docs.google.com/document/d/1rLUMry-VAWsewEz2mOLfdzH-7UKxuIn35VlzZH90CcI/edit#) 
+- <input type='checkbox'> **UL makes a ticket on the PROD board with details on the issue**
+	- Set the priority to "Blocker" if the issue is a blocker, and "Critical" if the issue is critical
+- <input type='checkbox'> **UL begins remediating following the [incident response checklist](https://broadinstitute.github.io/checklists.github.io/incident_response_checklist.html) (skipping the PagerDuty steps).** If they don't have time or can't help, they should contact the on-call engineer or someone else to remediate
+
+
+## If you're a developer and you or someone else is actively working on the issue
+- <input type='checkbox'> **Make a ticket on the PROD board with details on the issue**
+	- Categorize priority as either "Blocker" or "Critical" using the [SDLC](https://docs.google.com/document/d/1rLUMry-VAWsewEz2mOLfdzH-7UKxuIn35VlzZH90CcI/edit#)
+- <input type='checkbox'> **Follow the [incident response checklist](https://broadinstitute.github.io/checklists.github.io/incident_response_checklist.html) during remediation**
+
+## If you're a developer (or anyone else) and the issue is unknown and not currently being remediated
+- <input type='checkbox'> **Follow "If it's after hours"**
+
