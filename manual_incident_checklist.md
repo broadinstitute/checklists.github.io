@@ -23,7 +23,7 @@ If you've discover what you think is a production incident that is NOT already b
 ## If you're a developer and you or someone else is actively working on the issue
 - <input type='checkbox'> **Make a ticket on the PROD board with details on the issue**
 	- Categorize priority as either "Blocker" or "Critical" using the [SDLC](https://docs.google.com/document/d/1rLUMry-VAWsewEz2mOLfdzH-7UKxuIn35VlzZH90CcI/edit#)
-- <input type='checkbox'> **Follow the [incident response checklist](https://broadinstitute.github.io/checklists.github.io/incident_response_checklist.html) during remediation**
+- <input type='checkbox'> **Follow the [incident response checklist](https://broadinstitute.github.io/checklists.github.io/incident_response_checklist.html) during remediation, skipping the PagerDuty steps**
 
 ## If you're a developer (or anyone else) and the issue is unknown and not currently being remediated
 - <input type='checkbox'> **Follow "If it's after hours"**
