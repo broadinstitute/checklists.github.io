@@ -17,9 +17,6 @@ For on-call engineers
 
 ## After the incident
 - <input type='checkbox'> **Update the Jira ticket with relevant information**
-    - Update CLIA Impact*: 
-        - Downtime duration
-        - Impact on the system. 
     - Update components/services impacted
     - Update Description:
         - Update what was the issue
