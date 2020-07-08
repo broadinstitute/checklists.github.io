@@ -2,7 +2,7 @@
 
 For creating a manual production incident.
 
-## What are manual incidents?
+### What are manual incidents?
 
 Manual incidents are triggered when a production outage occurs but does not set off any of our automated alerts.  Incidents are defined in our Service Level Agreements(SLAs).  They can be reported by users, found in test runs, or caught by our own interactions in Terra. 
 
