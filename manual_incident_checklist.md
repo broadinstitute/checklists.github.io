@@ -28,7 +28,7 @@ If you would define the issue as "Blocker" or "Critical" and it is NOT already b
 - <input type='checkbox'> **Make a ticket on the PROD board with details on the issue**
 	- Set Priority as either "Blocker" or "Critical" using the [SLAs](https://docs.google.com/spreadsheets/d/1Qcfve-nHlS0Udq31nZlfwBDjguhsJ8sxm0Q7RqfZM8o/edit#gid=1440345288)
 	- This will automatically notify #workbench-resilience and frontline support
-- <input type='checkbox'> **To the best of your ability, fill in the "PagerDuty incident start time" field with the date and time the incident began**
+- <input type='checkbox'> **To the best of your ability, fill in the "Incident Start Time" field with the date and time the incident began**
 - <input type='checkbox'> **Follow the [incident response checklist](https://broadinstitute.github.io/checklists.github.io/incident_response_checklist.html) during remediation (skipping the PagerDuty steps)**
 
 ## If you're a developer (or anyone else) and the issue is unknown and not currently being remediated
