@@ -29,7 +29,7 @@ For on-call engineers
     - Use the date and a summary of the incident as the title
     - Fill out a draft of the incident timeline, to the best of your ability
     - Include a list of people who were heavily involved in remediation and should be present at the post-mortem
-- <input type='checkbox'> **Create an epic to track post-mortem actions and move to "Needs Post-Mortem"**
+- <input type='checkbox'> **Create an epic in the PROD project to track post-mortem actions and move to "Needs Post-Mortem"**
     - Title it "Post Mortem for ______" (issue summary)
     - Link the incident bug to the epic as "blocks"
     - Include a link to the post-mortem notes in the description
