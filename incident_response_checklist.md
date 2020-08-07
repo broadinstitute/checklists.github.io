@@ -12,7 +12,7 @@ For on-call engineers
         - Off-hours: [Follow this communication playbook to put up an initial banner.](https://docs.google.com/document/d/1E2qSIQECBBS0daWa_VXAOprdV5H_zvirgryTbxbPTDg/edit)
     - Impacts a single user (the user will need to be directly contacted)
         - Daytime: contact a support specialist for assistance (slack #dsde-comms or @dspsupportteam in #workbench-resilience). 
-        - Off-hours:  There is no dedicated support schedule. Ultimately, the email to the user should explain the impact to them, the time it occurred, what workspace/submission/ was impacted, ways to remediate the issue, and how we are working to prevent this in the future. The tone should be apologetic and helpful.
+        - Off-hours: Contact the user and cc support@terra.bio . The email should explain the time the issue occurred, how the issue is impacting the user, and any relevant Terra details (workspace/submission/notebook/etc.) The Frontline support team will follow up with the user the next work day to answer any further questions.
 - <input type='checkbox'> **Oversee the remediation of the issue, returning the affected systems to normal.**  Follow steps in the General Troubleshooting Playbook.
 
 ## After the incident
