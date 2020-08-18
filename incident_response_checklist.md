@@ -35,5 +35,5 @@ For on-call engineers
     - Title it "Post Mortem for ______" (issue summary)
     - Link the incident bug to the epic as "blocks"
     - Include a link to the post-mortem notes in the description
-    - Link any root cause remediation tasks as issues in the epic
+    - Link any additional remediation tasks as issues in the epic
 
