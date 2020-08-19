@@ -6,7 +6,7 @@ For creating a manual production incident.
 
 Manual incidents are triggered when a production outage occurs but does not set off any of our on-call alerts.  They can be reported by users, found in test runs, or caught by our own interactions in Terra. 
 
-**We define [production incidents](https://docs.google.com/spreadsheets/d/1Qcfve-nHlS0Udq31nZlfwBDjguhsJ8sxm0Q7RqfZM8o/edit#gid=1440345288) in our incident response SLA.**  Production incidents need to be remediated in accordance to our SLA (meaning in a timely manor).  Use the definitions to judge if the issue you're seeing is a production incident.  As a rule of thumb, incidents are _actively_ blocking users from functionality we have already delivered. 
+**We define [production incidents](https://docs.google.com/spreadsheets/d/1Qcfve-nHlS0Udq31nZlfwBDjguhsJ8sxm0Q7RqfZM8o/edit#gid=1440345288) in our incident response SLA.**  Production incidents need to be remediated in accordance to our SLA (meaning in a timely manner).  Use the definitions to judge if the issue you're seeing is a production incident.  As a rule of thumb, incidents are _actively_ blocking users from functionality we have already delivered. 
 
 If you think you've discovered what is or could be an incident, follow the steps below:
 
