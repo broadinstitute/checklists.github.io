@@ -4,13 +4,11 @@ For creating a manual production incident.
 
 ### What are manual incidents?
 
-Manual incidents are triggered when a production outage occurs but does not set off any of our automated alerts.  Incidents are defined in our Service Level Agreements(SLAs).  They can be reported by users, found in test runs, or caught by our own interactions in Terra. 
+Manual incidents are triggered when a production outage occurs but does not set off any of our on-call alerts.  They can be reported by users, found in test runs, or caught by our own interactions in Terra. 
 
+**We define [production incidents](https://docs.google.com/spreadsheets/d/1Qcfve-nHlS0Udq31nZlfwBDjguhsJ8sxm0Q7RqfZM8o/edit#gid=1440345288) in our incident response SLA.**  Production incidents need to be remediated in accordance to our SLA (meaning in a timely manor).  Use the definitions to judge if the issue you're seeing is a production incident.  As a rule of thumb, incidents are _actively_ blocking users from functionality we have already delivered. 
 
-## Step 1
-**Use the [SLA Definitions](https://docs.google.com/spreadsheets/d/1Qcfve-nHlS0Udq31nZlfwBDjguhsJ8sxm0Q7RqfZM8o/edit#gid=1440345288) to identify if the issue is a production incident.**
-
-If you would define the issue as "Blocker" or "Critical" and it is NOT already being investigated (check the #workbench-oncall and #workbench-resilience channels), follow the steps below:
+If you think you've discovered what is or could be an incident, follow the steps below:
 
 ## If it's after hours
 - <input type='checkbox'> **Type `/pd trigger` in any Slack channel to manually trigger a PagerDuty alert.**  
@@ -18,19 +16,19 @@ If you would define the issue as "Blocker" or "Critical" and it is NOT already b
     - This will alert the on-call engineer, who is responsible for overseeing incident response
 
 ## If you're Frontline Support or one of the portals (AoU, SCP)
-- <input type='checkbox'> **Contact user liason (UL) to triage severity.**  With UL, decide if it's a production issue and its category using the [SLAs](https://docs.google.com/spreadsheets/d/1Qcfve-nHlS0Udq31nZlfwBDjguhsJ8sxm0Q7RqfZM8o/edit#gid=1440345288) 
-- <input type='checkbox'> **UL makes a ticket on the PROD board with details on the issue**
-	- Set the priority to "Blocker" if the issue is a blocker, and "Critical" if the issue is critical
-- <input type='checkbox'> **UL begins remediating following the [incident response checklist](https://broadinstitute.github.io/checklists.github.io/incident_response_checklist.html) (skipping the PagerDuty steps).** If they don't have time or can't help, they should contact the on-call engineer or someone else to remediate
-
-
-## If you're a developer and you or someone else is actively working on the issue
 - <input type='checkbox'> **Make a ticket on the PROD board with details on the issue**
-	- Set Priority as either "Blocker" or "Critical" using the [SLAs](https://docs.google.com/spreadsheets/d/1Qcfve-nHlS0Udq31nZlfwBDjguhsJ8sxm0Q7RqfZM8o/edit#gid=1440345288)
-	- This will automatically notify #workbench-resilience and frontline support
-- <input type='checkbox'> **To the best of your ability, fill in the "Incident Start Time" field with the date and time the incident began**
-- <input type='checkbox'> **Follow the [incident response checklist](https://broadinstitute.github.io/checklists.github.io/incident_response_checklist.html) during remediation (skipping the PagerDuty steps)**
+- <input type='checkbox'> **Contact user liason (UL) to triage severity.**  With UL, decide if it's a production incident and its category using the [incident definitions](https://docs.google.com/spreadsheets/d/1Qcfve-nHlS0Udq31nZlfwBDjguhsJ8sxm0Q7RqfZM8o/edit#gid=1440345288) 
+- <input type='checkbox'> If it's an incident **UL begins remediating following the [incident response checklist](https://broadinstitute.github.io/checklists.github.io/incident_response_checklist.html) (skipping the PagerDuty steps).** If they don't have time or can't help, they should contact the on-call engineer or someone else to remediate.
 
-## If you're a developer (or anyone else) and the issue is unknown and not currently being remediated
+## If you're a developer and you're investigating the issue
+- <input type='checkbox'> **If you're user liaison, Frontline Support will have made a ticket on the PROD board.  Otherwise, make a [PROD](https://broadworkbench.atlassian.net/secure/RapidBoard.jspa?rapidView=15&projectKey=PROD) ticket with details on the issue.**
+	- This will automatically notify #workbench-resilience and frontline support
+	- To the best of your ability, fill in the "Incident Start Time" field with the date and time the issue began.
+- <input type='checkbox'> **During investigation, use the [incident definitions](https://docs.google.com/spreadsheets/d/1Qcfve-nHlS0Udq31nZlfwBDjguhsJ8sxm0Q7RqfZM8o/edit#gid=1440345288) to classify the issue.**
+	- If it's an incident, set the ticket's priority as "Blocker" or "Critical"
+	- Otherwise, move the ticket to the Support board or another Jira project
+- <input type='checkbox'> If it's an incident, **follow the [incident response checklist](https://broadinstitute.github.io/checklists.github.io/incident_response_checklist.html) during remediation (skipping the PagerDuty steps)**
+
+## If you're a developer (or anyone else) and you don't know what to do
 - <input type='checkbox'> **Follow "If it's after hours"**
 
