@@ -20,6 +20,7 @@ For on-call engineers
 
 ## After the incident
 - <input type='checkbox'> **Move the Jira bug to "Remediated"**
+    - This will automatically create an epic to track post-mortem actions and link the bug.  Link any additional remediation tasks as issues in the epic. 
 - <input type='checkbox'> **If a banner has been put up, confirm that a support specialist can take down the banners and update the Service Incident.**
 - <input type='checkbox'> **Update the Jira bug with relevant information**
     - Update components/services impacted
@@ -32,9 +33,4 @@ For on-call engineers
     - Use the date and a summary of the incident as the title
     - Fill out a draft of the incident timeline, to the best of your ability
     - Include a list of people who were heavily involved in remediation and should be present at the post-mortem
-- <input type='checkbox'> **Create an epic to track post-mortem actions and move to "Needs Post-Mortem"**
-    - Title it "Post Mortem for ______" (issue summary)
-    - Link the incident bug to the epic as "blocks"
-    - Include a link to the post-mortem notes in the description
-    - Link any additional remediation tasks as issues in the epic
-
+    - Add a link to the notes in the post-mortem epic description 
