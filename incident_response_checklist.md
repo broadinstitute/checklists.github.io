@@ -20,7 +20,7 @@ For on-call engineers
 
 ## After the incident
 - <input type='checkbox'> **Move the Jira bug to "Remediated"**
-    - This will automatically create an epic to track post-mortem actions and link the bug.  Link any additional remediation tasks as issues in the epic. 
+    - This will automatically create an epic to track post mortem actions and link the bug.  Link any additional remediation tasks as issues in the epic. 
 - <input type='checkbox'> **If a banner has been put up, confirm that a support specialist can take down the banners and update the Service Incident.**
 - <input type='checkbox'> **Update the Jira bug with relevant information**
     - Update components/services impacted
@@ -29,8 +29,7 @@ For on-call engineers
         - Enter how it was resolved
         - Gather logs
     - Set Origin: Automated alerting systems such as New Relic or human (Support team, CS)
-- <input type='checkbox'> **Create a post-mortem notes in the [Post Mortems Folder](https://drive.google.com/drive/u/0/folders/1-tGmN1KZqDIBePxc-ZleNv4meXoyA9ET) using the [template](https://docs.google.com/document/d/1BLtWVeWrzCpfEZSjSlSnTeUsJSB64rEd2WkSUgP7FZc/edit)**
-    - Use the date and a summary of the incident as the title
-    - Fill out a draft of the incident timeline, to the best of your ability
-    - Include a list of people who were heavily involved in remediation and should be present at the post-mortem
-    - Add a link to the notes in the post-mortem epic description 
+- <input type='checkbox'> **Create a [new post mortem](https://broadworkbench.atlassian.net/wiki/spaces/AP/pages/702021656/Post+Mortems) from the Confluence template.**
+    - Set the incident summary as `description`
+    - To the best of your ability, fill out `1. What happened(timeline)?` and `3. Who was involved?`
+    - Link the post mortem to the new epic as a Confluence page (the drop arrow besides "Link Issue")
