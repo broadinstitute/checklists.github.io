@@ -1,12 +1,13 @@
 # Incident Response Checklist
-For on-call engineers
+For the engineer managing a production incident.
 
-## During an incident
-- <input type='checkbox'> **Acknowledge the event in PagerDuty**
-- <input type='checkbox'> **From the PagerDuty incident, click *More Actions* -> *Create JIRA Issue* to create a ticket on the [Production Board](https://broadworkbench.atlassian.net/secure/RapidBoard.jspa?rapidView=15&projectKey=PROD&selectedIssue=PROD-324)**
-    - This will create a Jira ticket that includes some metadata about the incident, including start-time.  Update the summary and description as needed.
-    - Assign to yourself if you are investigating the issue
-- <input type='checkbox'> **Report in the #workbench-oncall slack channel that you are investigating event**
+## During the incident
+- <input type='checkbox'> **If the incident originates in PagerDuty, acknowledge the event in PagerDuty and click *More Actions* -> *Create JIRA Issue* to create a ticket on the [Production Board](https://broadworkbench.atlassian.net/secure/RapidBoard.jspa?rapidView=15&projectKey=PROD&selectedIssue=PROD-324)**
+    - This will create a Jira bug that includes some metadata about the incident, including start-time.  Update the summary and description as needed and assign to yourself.
+    - If the incident does NOT originate in PagerDuty, confirm that a Jira bug has been made or create one. 
+- <input type='checkbox'> **Move the Jira bug to "In Progress"**
+- <input type='checkbox'> **Mention in #workbench-resiliance that you are investigating the issue.** 
+- <input type='checkbox'> **Notify users of the incident**
     - If it impacts many users:
         - Daytime: Confirm that a support specialist is aware of the issue (slack #dsde-comms or @dspsupportteam in #workbench-resilience) and can put up a FireCloud/Terra [Service Incident](https://broadinstitute.zendesk.com/hc/en-us/sections/360003692231-Service-Notifications) and banner. Provide the Jira ticket and a description of the user impact.
         - Off-hours: [Follow this communication playbook to put up an initial banner.](https://docs.google.com/document/d/1E2qSIQECBBS0daWa_VXAOprdV5H_zvirgryTbxbPTDg/edit)
