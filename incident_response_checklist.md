@@ -2,12 +2,12 @@
 For the engineer managing a production incident.
 
 ## During the incident
-- <input type='checkbox'> **If the incident originates in PagerDuty, acknowledge the event in PagerDuty and click *More Actions* -> *Create JIRA Issue* to create a ticket on the [Production Board](https://broadworkbench.atlassian.net/secure/RapidBoard.jspa?rapidView=15&projectKey=PROD&selectedIssue=PROD-324)**
+- <input type='checkbox'> `immediately` **If the incident originates in PagerDuty, acknowledge the event in PagerDuty and click *More Actions* -> *Create JIRA Issue* to create a ticket on the [Production Board](https://broadworkbench.atlassian.net/secure/RapidBoard.jspa?rapidView=15&projectKey=PROD&selectedIssue=PROD-324)**
     - This will create a Jira bug that includes some metadata about the incident, including start-time.  Update the summary and description as needed and assign to yourself.
     - If the incident does NOT originate in PagerDuty, confirm that a Jira bug has been made or create one. 
-- <input type='checkbox'> **Move the Jira bug to "In Progress"**
-- <input type='checkbox'> **Mention in #workbench-resiliance that you are investigating the issue.** 
-- <input type='checkbox'> **Notify users of the incident**
+- <input type='checkbox'> `immediately` **Move the Jira bug to "In Progress"**
+- <input type='checkbox'> `immediately` **Mention in #workbench-resiliance that you are investigating the issue.** 
+- <input type='checkbox'> `4 hrs` **Notify users of the incident**
     - If it impacts many users:
         - Daytime: Confirm that a support specialist is aware of the issue (slack #dsde-comms or @dspsupportteam in #workbench-resilience) and can put up a FireCloud/Terra [Service Incident](https://broadinstitute.zendesk.com/hc/en-us/sections/360003692231-Service-Notifications) and banner. Provide the Jira ticket and a description of the user impact.
         - Off-hours: [Follow this communication playbook to put up an initial banner.](https://docs.google.com/document/d/1E2qSIQECBBS0daWa_VXAOprdV5H_zvirgryTbxbPTDg/edit)
@@ -15,7 +15,7 @@ For the engineer managing a production incident.
         - Daytime: contact a support specialist for assistance (slack #dsde-comms or @dspsupportteam in #workbench-resilience). 
         - Off-hours: Contact the user and cc support@terra.bio . The email should explain the time the issue occurred, how the issue is impacting the user, and any relevant Terra details (workspace/submission/notebook/etc.) The Frontline support team will follow up with the user the next work day to answer any further questions.
     - Confirm that the "Users Informed" field has been updated on the Jira bug.
-- <input type='checkbox'> **Oversee the remediation of the issue, returning the affected systems to normal.**  Follow steps in the [General Troubleshooting Playbook](https://docs.google.com/document/d/1KUdZBrnedzCCYQTNNmUCn_NVgTvfVKby_dyU7Laq5g0/edit#).  
+- <input type='checkbox'> `12 hrs` **Oversee the remediation of the issue, returning the affected systems to normal.**  Follow steps in the [General Troubleshooting Playbook](https://docs.google.com/document/d/1KUdZBrnedzCCYQTNNmUCn_NVgTvfVKby_dyU7Laq5g0/edit#).  
     - Note that "remediation" means that the system is back "up" and affected users are unblocked, not necessarily that the underlying cause has been fixed.
     - If there are additional actions to address root cause, track them as tickets on the appropriate Jira board.
 
