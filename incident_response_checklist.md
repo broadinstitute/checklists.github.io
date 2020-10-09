@@ -3,7 +3,7 @@ For on-call engineers
 
 ## During an incident
 - <input type='checkbox'> **Acknowledge the event in PagerDuty**
-- <input type='checkbox'> **From the PagerDuty incident, click *More Actions* -> *Create JIRA Issue* to create a ticket on the [Production Board](https://broadworkbench.atlassian.net/secure/RapidBoard.jspa?rapidView=15&projectKey=PROD&selectedIssue=PROD-324)**
+- <input type='checkbox'> **From the PagerDuty incident, click *More Actions* -> *Create JIRA Issue* to create a ticket on the [Production Board](https://broadworkbench.atlassian.net/secure/RapidBoard.jspa?rapidView=88&projectKey=PROD)**
     - This will create a Jira ticket that includes some metadata about the incident, including start-time.  Update the summary and description as needed.
     - Assign to yourself if you are investigating the issue
 - <input type='checkbox'> **Report in the #workbench-oncall slack channel that you are investigating event**
