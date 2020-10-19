@@ -14,6 +14,7 @@ For on-call engineers
         - Daytime: contact a support specialist for assistance (slack #dsde-comms or @dspsupportteam in #workbench-resilience). 
         - Off-hours: Contact the user and cc support@terra.bio . The email should explain the time the issue occurred, how the issue is impacting the user, and any relevant Terra details (workspace/submission/notebook/etc.) The Frontline support team will follow up with the user the next work day to answer any further questions.
     - Confirm that the "Users Informed" field has been updated on the Jira bug.
+- <input type='checkbox'> **If needed, open a Support Case with Google**  Follow steps in the [Google Support Case Creation](https://docs.google.com/document/d/1zSyuFJ7Qn7HfEVHssNF43VNyF-ox8I7ZaMBBXbbqt2g/edit#) document.
 - <input type='checkbox'> **Oversee the remediation of the issue, returning the affected systems to normal.**  Follow steps in the [General Troubleshooting Playbook](https://docs.google.com/document/d/1KUdZBrnedzCCYQTNNmUCn_NVgTvfVKby_dyU7Laq5g0/edit#).  
     - Note that "remediation" means that the system is back "up" and affected users are unblocked, not necessarily that the underlying cause has been fixed.
     - If there are additional actions to address root cause, track them as tickets on the appropriate Jira board.
