@@ -21,7 +21,7 @@ If you think you've discovered what is or could be an incident, follow the steps
 - <input type='checkbox'> If it's an incident **UL begins remediating following the [incident response checklist](https://broadinstitute.github.io/checklists.github.io/incident_response_checklist.html) (skipping the PagerDuty steps).** If they don't have time or can't help, they should contact the on-call engineer or someone else to remediate.
 
 ## If you're a developer and you're investigating the issue
-- <input type='checkbox'> **If you're user liaison, Frontline Support will have made a ticket on the PROD board.  Otherwise, make a [PROD](https://broadworkbench.atlassian.net/secure/RapidBoard.jspa?rapidView=15&projectKey=PROD) ticket with details on the issue.**
+- <input type='checkbox'> **If you're user liaison, Frontline Support will have made a ticket on the PROD board.  Otherwise, make a [PROD](https://broadworkbench.atlassian.net/secure/RapidBoard.jspa?rapidView=88&projectKey=PROD) ticket with details on the issue.**
 	- This will automatically notify #workbench-resilience and frontline support
 	- To the best of your ability, fill in the "Incident Start Time" field with the date and time the issue began.
 - <input type='checkbox'> **During investigation, use the [incident definitions](https://docs.google.com/spreadsheets/d/1Qcfve-nHlS0Udq31nZlfwBDjguhsJ8sxm0Q7RqfZM8o/edit#gid=1440345288) to classify the issue.**
