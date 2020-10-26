@@ -30,7 +30,7 @@ For the engineer managing a production incident.
         - Enter how it was resolved
         - Gather logs
     - Set Origin: Automated alerting systems such as New Relic or human (Support team, CS)
-- <input type='checkbox'> <span style="color:gold">`1-2 days`</span> **Create a [new post mortem](https://broadworkbench.atlassian.net/wiki/spaces/AP/pages/702021656/Post+Mortems) from the Confluence template.**
+- <input type='checkbox'> <span style="color:gold">`1-2 days`</span> **Create a [new post mortem notes page](https://broadworkbench.atlassian.net/wiki/spaces/AP/pages/702021656/Post+Mortems) from the Confluence template.**
     - Set the incident summary as `description`
     - To the best of your ability, fill out `1. What happened(timeline)?` and `3. Who was involved?`
     - Link the post mortem to the new epic as a Confluence page (the drop arrow besides "Link Issue")
