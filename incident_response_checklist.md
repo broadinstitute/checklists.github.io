@@ -22,7 +22,7 @@ For the engineer managing a production incident.
 ## After the incident
 - <input type='checkbox'> <span style="color:red">`immediately`</span> **Move the Jira bug to "Remediated"**
     - This will automatically create an epic to track post mortem actions and link the bug.  Link any additional remediation tasks as issues in the epic. 
-- <input type='checkbox'> <span style="color:red">`immediately`</span> **If a banner has been put up, confirm that it gets taken down.**
+- <input type='checkbox'> <span style="color:red">`immediately`</span> **If a banner has been put up, confirm that it gets taken down.** During off-hours: [Follow the communication playbook to take down the banner.](https://docs.google.com/document/d/1E2qSIQECBBS0daWa_VXAOprdV5H_zvirgryTbxbPTDg/edit)
 - <input type='checkbox'> <span style="color:gold">`1-2 days`</span> **Update the Jira bug with relevant information**
     - Update components/services impacted
     - Update Description:
