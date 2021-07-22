@@ -24,6 +24,7 @@ For the engineer managing a production incident.
 - <input type='checkbox'> <span style="color:red">`immediately`</span> **Move the Jira bug to "Remediated"**
     - This will automatically create an epic to track post mortem actions and link the bug.  Link any additional remediation tasks as issues in the epic. 
 - <input type='checkbox'> <span style="color:red">`immediately`</span> **If a banner has been put up, confirm that it gets taken down.** During off-hours: [Take down the banner.](https://fcprod-jenkins.dsp-techops.broadinstitute.org/job/terra-service-banner)
+- <input type='checkbox'> <span style="color:red">`immediately`</span> **If the incident originated from PagerDuty, confirm that the PagerDuty incident was resolved or resolve it manually**
 - <input type='checkbox'> <span style="color:gold">`1-2 days`</span> **Update the Jira bug with relevant information**
     - Update components/services impacted
     - Update Description:
