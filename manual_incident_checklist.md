@@ -17,11 +17,12 @@ If you think you've discovered what is or could be an incident, follow the steps
 
 ## If you're Frontline Support or one of the portals (AoU, SCP)
 - <input type='checkbox'> **Make a ticket on the PROD board with details on the issue**
-- <input type='checkbox'> **Contact user liason (UL) to triage severity.**  With UL, decide if it's a production incident and its category using the [incident definitions](https://docs.google.com/spreadsheets/d/1Qcfve-nHlS0Udq31nZlfwBDjguhsJ8sxm0Q7RqfZM8o/edit#gid=1440345288) 
-- <input type='checkbox'> If it's an incident **UL begins remediating following the [incident response checklist](https://broadinstitute.github.io/checklists.github.io/incident_response_checklist.html) (skipping the PagerDuty steps).** If they don't have time or can't help, they should contact the on-call engineer or someone else to remediate.
+	-  To the best of your ability, fill in the “Incident Start Time” field with the date and time the issue began and “Priority” according to the SLA.
+- <input type='checkbox'> **Contact Tier 3 Support to triage severity.**  With Tier 3, decide if it's a production incident and its category using the [incident definitions](https://docs.google.com/spreadsheets/d/1Qcfve-nHlS0Udq31nZlfwBDjguhsJ8sxm0Q7RqfZM8o/edit#gid=1440345288) 
+- <input type='checkbox'> If it's an incident **Tier 3 Support can escalate to the engineering team that can resolve the issue.** If no one responds, if they don't have time or can't help, contact the on-call engineer by following the instructions under “If it’s after hours”.
 
 ## If you're a developer and you're investigating the issue
-- <input type='checkbox'> **If you're user liaison, Frontline Support will have made a ticket on the PROD board.  Otherwise, make a [PROD](https://broadworkbench.atlassian.net/secure/RapidBoard.jspa?rapidView=88&projectKey=PROD) ticket with details on the issue.**
+- <input type='checkbox'> **Check if Frontline Support made a ticket on the PROD board.  Otherwise, make a [PROD](https://broadworkbench.atlassian.net/secure/RapidBoard.jspa?rapidView=88&projectKey=PROD) ticket with details on the issue.**
 	- This will automatically notify #workbench-resilience and frontline support
 	- To the best of your ability, fill in the "Incident Start Time" field with the date and time the issue began.
 - <input type='checkbox'> **During investigation, use the [incident definitions](https://docs.google.com/spreadsheets/d/1Qcfve-nHlS0Udq31nZlfwBDjguhsJ8sxm0Q7RqfZM8o/edit#gid=1440345288) to classify the issue.**
