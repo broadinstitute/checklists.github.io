@@ -10,7 +10,7 @@ For the engineer managing a production incident.
 - <input type='checkbox'> **Notify users of the incident**
     - If it impacts many users:
         - <span style="color:darkorange">`4 hrs`</span> Daytime: Confirm that a support specialist is aware of the issue (slack #dsde-comms or @dspsupportteam in #workbench-resilience) and can put up a banner. Provide the Jira ticket and a description of the user impact.
-        - <span style="color:darkorange">`8 hrs`</span> Off-hours: [Put up a banner in Terra.](https://fcprod-jenkins.dsp-techops.broadinstitute.org/job/terra-service-banner) (You will need to be on the VPN and authed in [prod jenkins](https://fcprod-jenkins.dsp-techops.broadinstitute.org/) with your github account)
+        - <span style="color:darkorange">`8 hrs`</span> Off-hours: [Put up a banner in Terra.](https://fcprod-jenkins.dsp-techops.broadinstitute.org/job/terra-service-banner) (You will need to be on the VPN and authed in [prod jenkins](https://fcprod-jenkins.dsp-techops.broadinstitute.org/) with your github account. You will not be able to see this job or any others until you have logged in at [https://fcprod-jenkins.dsp-techops.broadinstitute.org](https://fcprod-jenkins.dsp-techops.broadinstitute.org))
             - In order to set up the banner, from the Jenkins job, click on "Build With Parameters" and you'll see a screen with free text fields and information about how to fill in banner details.        
     - Impacts a single user (the user will need to be directly contacted)
         - <span style="color:darkorange">`8 hrs`</span> Daytime: contact a support specialist for assistance (slack #dsde-comms or @dspsupportteam in #workbench-resilience). 
