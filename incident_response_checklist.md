@@ -9,11 +9,13 @@ For the engineer managing a production incident.
 - <input type='checkbox'> <span style="color:red">`immediately`</span> **Mention in #workbench-resilience that you are investigating the issue.** 
 - <input type='checkbox'> **Notify users of the incident**
     - If it impacts many users:
-        - <span style="color:darkorange">`4 hrs`</span> Daytime: Confirm that a support specialist is aware of the issue (slack #dsde-comms or @dspsupportteam in #workbench-resilience) and can put up a banner. Provide the Jira ticket and a description of the user impact.
-        - <span style="color:darkorange">`8 hrs`</span> Off-hours: [Put up a banner in Terra.](https://fcprod-jenkins.dsp-techops.broadinstitute.org/job/terra-service-banner) (You will need to be on the VPN and authed in [prod jenkins](https://fcprod-jenkins.dsp-techops.broadinstitute.org/) with your github account)
-            - In order to set up the banner, from the Jenkins job, click on "Build With Parameters" and you'll see a screen with free text fields and information about how to fill in banner details.        
+        - <span style="color:darkorange">`4 hrs`</span> Daytime: Confirm that a support specialist is aware of the issue (slack #dsde-comms or @terrasupport in #workbench-resilience) and can put up a banner. Provide the Jira ticket and a description of the user impact.
+        - <span style="color:darkorange">`8 hrs`</span> Off-hours: Put up a banner in Terra.
+            1. Connect to VPN (either split or non-split) using Cisco AnyConnect or your VPN client of choice
+            2. Navigate to https://fcprod-jenkins.dsp-techops.broadinstitute.org and log in
+            3. Navigate to [banner job](https://fcprod-jenkins.dsp-techops.broadinstitute.org/job/terra-service-banner) click on "Build With Parameters" on the left-hand side. You will see a screen with free text fields and information about how to fill in banner details.       
     - Impacts a single user (the user will need to be directly contacted)
-        - <span style="color:darkorange">`8 hrs`</span> Daytime: contact a support specialist for assistance (slack #dsde-comms or @dspsupportteam in #workbench-resilience). 
+        - <span style="color:darkorange">`8 hrs`</span> Daytime: contact a support specialist for assistance (slack #dsde-comms or @terrasupport in #workbench-resilience). 
         - <span style="color:gold">`12 hrs`</span> Off-hours: Contact the user and cc support@terra.bio . The email should explain the time the issue occurred, how the issue is impacting the user, and any relevant Terra details (workspace/submission/notebook/etc.) The Frontline support team will follow up with the user the next work day to answer any further questions.
 - <input type='checkbox'> **Update the "Users Informed" field on the Jira bug.**
 - <input type='checkbox'> <span style="color:darkorange">`12 hrs`</span> (Blocker) <span style="color:gold">`48 hrs`</span> (Critical) **Oversee the remediation of the issue, returning the affected systems to normal.**  Follow steps in the [General Troubleshooting Playbook](https://docs.google.com/document/d/1KUdZBrnedzCCYQTNNmUCn_NVgTvfVKby_dyU7Laq5g0/edit#).  
