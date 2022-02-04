@@ -38,5 +38,3 @@ For the engineer managing a production incident.
     - Set the incident summary as `description`
     - To the best of your ability, fill out `1. What happened(timeline)?` and `3. Who was involved?`
     - Link the incident review to the new epic as a Confluence page (the drop arrow besides "Link Issue")
-- The link to How we do Incident reviews in the checklist.  
-- https://docs.google.com/document/d/1RqTFzplkgWTlhGaoDTYgB6JcWOJmFqjwQAVe69DsS3E/edit 
