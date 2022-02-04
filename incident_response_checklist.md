@@ -24,7 +24,7 @@ For the engineer managing a production incident.
 
 ## After the incident
 - <input type='checkbox'> <span style="color:red">`immediately`</span> **Move the Jira bug to "Remediated"**
-    - This will automatically create an epic to track post mortem actions and link the bug.  Link any additional remediation tasks as issues in the epic. 
+    - This will automatically create an epic to track incident review actions and link the bug.  Link any additional remediation tasks as issues in the epic. 
 - <input type='checkbox'> <span style="color:red">`immediately`</span> **If a banner has been put up, confirm that it gets taken down.** During off-hours: [Take down the banner.](https://fcprod-jenkins.dsp-techops.broadinstitute.org/job/terra-service-banner)
 - <input type='checkbox'> <span style="color:red">`immediately`</span> **If the incident originated from PagerDuty, confirm that the PagerDuty incident was resolved or resolve it manually**
 - <input type='checkbox'> <span style="color:gold">`1-2 days`</span> **Update the Jira bug with relevant information**
@@ -34,7 +34,9 @@ For the engineer managing a production incident.
         - Enter how it was resolved
         - Gather logs
     - Set Origin: Automated alerting systems such as New Relic or human (Support team, CS)
-- <input type='checkbox'> <span style="color:gold">`1-2 days`</span> **Create a [new post mortem notes page](https://broadworkbench.atlassian.net/wiki/spaces/AP/pages/702021656/Post+Mortems) from the Confluence template.**
+- <input type='checkbox'> <span style="color:gold">`1-2 days`</span> **Create a [new incident review notes page](https://broadworkbench.atlassian.net/wiki/spaces/AP/pages/702021656/Post+Mortems) from the Confluence template.**
     - Set the incident summary as `description`
     - To the best of your ability, fill out `1. What happened(timeline)?` and `3. Who was involved?`
-    - Link the post mortem to the new epic as a Confluence page (the drop arrow besides "Link Issue")
+    - Link the incident review to the new epic as a Confluence page (the drop arrow besides "Link Issue")
+- The link to How we do Incident reviews in the checklist.  
+_ https://docs.google.com/document/d/1RqTFzplkgWTlhGaoDTYgB6JcWOJmFqjwQAVe69DsS3E/edit 
