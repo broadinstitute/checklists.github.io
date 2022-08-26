@@ -5,7 +5,7 @@ For the engineer managing a production incident.
 - <input type='checkbox'> <span style="color:red">`immediately`</span> **If the incident originates in PagerDuty, acknowledge the event in PagerDuty and click *More Actions* -> *Create JIRA Issue* to create a ticket on the [Production Board](https://broadworkbench.atlassian.net/secure/RapidBoard.jspa?rapidView=88&projectKey=PROD)**
     - This will create a Jira bug that includes incident start-time.  Update the summary and description as needed and assign to yourself.
     - If the incident does NOT originate in PagerDuty, confirm that a Jira bug has been made or create one. 
-- <input type='checkbox'> <span style="color:red">`immediately`</span> **Change the Jira bug priority to Critical or Blocker based on our [SLA definitions](https://docs.google.com/spreadsheets/d/1Qcfve-nHlS0Udq31nZlfwBDjguhsJ8sxm0Q7RqfZM8o/edit#gid=0)"**
+- <input type='checkbox'> <span style="color:red">`immediately`</span> **Change the Jira bug priority to Critical or Blocker based on our [SLA definitions](https://docs.google.com/spreadsheets/d/1Qcfve-nHlS0Udq31nZlfwBDjguhsJ8sxm0Q7RqfZM8o/edit#gid=0)**
 - <input type='checkbox'> <span style="color:red">`immediately`</span> **Move the Jira bug to "In Progress"**
 - <input type='checkbox'> <span style="color:red">`immediately`</span> **Mention in #workbench-resilience that you are investigating the issue.** 
 - <input type='checkbox'> **Notify users of the incident**
@@ -22,7 +22,7 @@ For the engineer managing a production incident.
 - <input type='checkbox'> <span style="color:darkorange">`12 hrs`</span> (Blocker) <span style="color:gold">`48 hrs`</span> (Critical) **Oversee the remediation of the issue, returning the affected systems to normal.**  Follow steps in the [General Troubleshooting Playbook](https://docs.google.com/document/d/1KUdZBrnedzCCYQTNNmUCn_NVgTvfVKby_dyU7Laq5g0/edit#).
     - Note that "remediation" means that the system is back "up" and affected users are unblocked, not necessarily that the underlying cause has been fixed.
     - If there are additional actions to address root cause, track them as tickets on the appropriate Jira board.
-- <input type='checkbox'> **If the investigation must be passed between daytime and off-hours engineers, please ensure all relevant information is captured in JIRA/Slack so the handoff is as smooth as possible.**
+- <input type='checkbox'> **If the investigation must be passed between daytime and off-hours engineers, ensure all relevant information is captured in JIRA/Slack so the handoff is as smooth as possible.**
 
 ## After the incident
 - <input type='checkbox'> <span style="color:red">`immediately`</span> **Move the Jira bug to "Remediated"**
