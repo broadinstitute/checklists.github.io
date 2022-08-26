@@ -5,22 +5,24 @@ For the engineer managing a production incident.
 - <input type='checkbox'> <span style="color:red">`immediately`</span> **If the incident originates in PagerDuty, acknowledge the event in PagerDuty and click *More Actions* -> *Create JIRA Issue* to create a ticket on the [Production Board](https://broadworkbench.atlassian.net/secure/RapidBoard.jspa?rapidView=88&projectKey=PROD)**
     - This will create a Jira bug that includes incident start-time.  Update the summary and description as needed and assign to yourself.
     - If the incident does NOT originate in PagerDuty, confirm that a Jira bug has been made or create one. 
+- <input type='checkbox'> <span style="color:red">`immediately`</span> **Change the Jira bug priority to Critical or Blocker based on our [SLA definitions](https://docs.google.com/spreadsheets/d/1Qcfve-nHlS0Udq31nZlfwBDjguhsJ8sxm0Q7RqfZM8o/edit#gid=0)"**
 - <input type='checkbox'> <span style="color:red">`immediately`</span> **Move the Jira bug to "In Progress"**
 - <input type='checkbox'> <span style="color:red">`immediately`</span> **Mention in #workbench-resilience that you are investigating the issue.** 
 - <input type='checkbox'> **Notify users of the incident**
-    - If it impacts many users:
-        - <span style="color:darkorange">`4 hrs`</span> Daytime: Confirm that a support specialist is aware of the issue (slack #dsde-comms or @terrasupport in #workbench-resilience) and can put up a banner. Provide the Jira ticket and a description of the user impact.
+    - If it impacts multiple users:
+        - <span style="color:darkorange">`4 hrs`</span> Daytime: Confirm that a support specialist is aware of the issue (slack @terrasupport in the JIRA ticket thread in #workbench-resilience). The support specialist can set up the necessary user communications (article/banner/etc.). Provide the support specialist with information about when the issue started, which services are affected, how users are impacted, and if there are any known workarounds.
         - <span style="color:darkorange">`8 hrs`</span> Off-hours: Put up a banner in Terra.
             1. Connect to VPN (either split or non-split) using Cisco AnyConnect or your VPN client of choice
             2. Navigate to https://fcprod-jenkins.dsp-techops.broadinstitute.org and log in
             3. Navigate to [banner job](https://fcprod-jenkins.dsp-techops.broadinstitute.org/job/terra-service-banner) click on "Build With Parameters" on the left-hand side. You will see a screen with free text fields and information about how to fill in banner details.       
     - Impacts a single user (the user will need to be directly contacted)
-        - <span style="color:darkorange">`8 hrs`</span> Daytime: contact a support specialist for assistance (slack #dsde-comms or @terrasupport in #workbench-resilience). 
-        - <span style="color:gold">`12 hrs`</span> Off-hours: Contact the user and cc support@terra.bio . The email should explain the time the issue occurred, how the issue is impacting the user, and any relevant Terra details (workspace/submission/notebook/etc.) The Frontline support team will follow up with the user the next work day to answer any further questions.
+        - <span style="color:darkorange">`8 hrs`</span> Daytime: contact a support specialist for assistance (slack @terrasupport in the JIRA ticket thread in #workbench-resilience). 
+        - <span style="color:gold">`12 hrs`</span> Off-hours: Email the user and cc support@terra.bio . The email should explain the time the issue occurred, how the issue is impacting the user, and any relevant Terra details (workspace/submission/notebook/etc.) The Frontline support team will follow up with the user the next work day to answer any further questions.
 - <input type='checkbox'> **Update the "Users Informed" field on the Jira bug.**
-- <input type='checkbox'> <span style="color:darkorange">`12 hrs`</span> (Blocker) <span style="color:gold">`48 hrs`</span> (Critical) **Oversee the remediation of the issue, returning the affected systems to normal.**  Follow steps in the [General Troubleshooting Playbook](https://docs.google.com/document/d/1KUdZBrnedzCCYQTNNmUCn_NVgTvfVKby_dyU7Laq5g0/edit#).  
+- <input type='checkbox'> <span style="color:darkorange">`12 hrs`</span> (Blocker) <span style="color:gold">`48 hrs`</span> (Critical) **Oversee the remediation of the issue, returning the affected systems to normal.**  Follow steps in the [General Troubleshooting Playbook](https://docs.google.com/document/d/1KUdZBrnedzCCYQTNNmUCn_NVgTvfVKby_dyU7Laq5g0/edit#).
     - Note that "remediation" means that the system is back "up" and affected users are unblocked, not necessarily that the underlying cause has been fixed.
     - If there are additional actions to address root cause, track them as tickets on the appropriate Jira board.
+- <input type='checkbox'> **If the investigation must be passed between daytime and off-hours engineers, please ensure all relevant information is captured in JIRA/Slack so the handoff is as smooth as possible.**
 
 ## After the incident
 - <input type='checkbox'> <span style="color:red">`immediately`</span> **Move the Jira bug to "Remediated"**
