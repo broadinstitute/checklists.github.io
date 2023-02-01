@@ -11,7 +11,7 @@ Manual incidents are triggered when a production outage occurs but does not set 
 If you think you've discovered what is or could be an incident, follow the steps below:
 
 ## If it's after hours
-- <input type='checkbox'> **Type `/terraisdown` in any Slack channel to manually trigger a PagerDuty alert.**  
+- <input type='checkbox'> **Visit [broad.io/terra-incident](https://broad.io/terra-incident) to manually trigger a PagerDuty alert.**  
     - Include any information you know about the issue: when it began, how it was discovered, what's broken, any ideas about why.
     - This will alert the on-call engineer, who is responsible for overseeing incident response
 
