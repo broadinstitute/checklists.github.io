@@ -31,8 +31,9 @@ For the engineer managing a production incident.
    - During off-hours: Take down the banner by running the [terra-service-banner-clear](https://fcprod-jenkins.dsp-techops.broadinstitute.org/job/terra-service-banner-clear/) job if there is only one banner displaying on the platform. Use the [terra-service-banner-remove](https://fcprod-jenkins.dsp-techops.broadinstitute.org/job/terra-service-banner-remove/) job if more than one banner is up. See the [Terra Multi-Banner Readme](https://docs.google.com/document/d/16Av62pb1Dk6FiwqvhbcNE1hWq9WdLcP9iWvK-lZQmd0/edit#) for more details about these jobs.
 - <input type='checkbox'> <span style="color:red">`immediately`</span> **If the incident originated from PagerDuty, confirm that the PagerDuty incident was resolved or resolve it manually**
 - <input type='checkbox'> <span style="color:gold">`1-2 days`</span> **Update the Jira bug with relevant information**
-    - Update the ***Incident Start Time*** field with the time the issue was introduced to production. If unknown, use the time of the first user report.
-    - Update the ***Date Incident Identified*** field with the time we declared the incident.
+    - Update the ***DateTime Issue Introduced*** field with the time the issue was introduced to production. If unknown, use the time of the first user report.
+    - Update the ***DateTime Incident Declared*** field with the time we declared the incident.
+    - Update the ***Teams*** field with the appropriate team for the service affected.
     - Update components/services impacted
     - Update Description:
         - Update what was the issue
