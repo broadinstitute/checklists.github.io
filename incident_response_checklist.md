@@ -33,7 +33,7 @@ For the engineer managing a production incident.
 - <input type='checkbox'> <span style="color:gold">`1-2 days`</span> **Update the Jira bug with relevant information**
     - Update the ***DateTime Issue Introduced*** field with the time the issue was introduced to production. If unknown, use the time of the first user report.
     - Update the ***DateTime Incident Declared*** field with the time we declared the incident.
-    - - Update the ***Teams*** field with the appropriate team for the service affected.
+    - Update the ***Teams*** field with the appropriate team for the service affected.
     - Update components/services impacted
     - Update Description:
         - Update what was the issue
