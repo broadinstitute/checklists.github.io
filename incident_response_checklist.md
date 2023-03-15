@@ -1,5 +1,5 @@
 # Incident Response Checklist
-For the engineer managing a production incident.
+For the engineer managing a production incident. Visit [broad.io/tir](https://broad.io/tir) for the full list of Terra Incident Response documentation.
 
 ## During the incident
 - <input type='checkbox'> <span style="color:red">`immediately`</span> **If the incident originates in PagerDuty, acknowledge the event in PagerDuty and click *More Actions* -> *Create JIRA Issue* to create a ticket on the [Production Board](https://broadworkbench.atlassian.net/secure/RapidBoard.jspa?rapidView=88&projectKey=PROD)**
