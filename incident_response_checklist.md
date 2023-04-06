@@ -26,7 +26,8 @@ For the engineer managing a production incident. Visit [broad.io/tir](https://br
 
 ## After the incident
 - <input type='checkbox'> <span style="color:red">`immediately`</span> **Move the Jira bug to "Remediated" status**
-    - This will automatically create an epic to track incident review actions and link the bug.  Link any additional remediation tasks as issues in the epic. 
+    - This will automatically create an Epic to track incident review actions and link the Bug.
+    - Link any additional remediation tasks as issues in the **Bug** ticket. 
 - <input type='checkbox'> <span style="color:red">`immediately`</span> **If a banner has been put up, confirm that it gets taken down.** 
    - During off-hours: Take down the banner by running the [terra-service-banner-clear](https://fcprod-jenkins.dsp-techops.broadinstitute.org/job/terra-service-banner-clear/) job if there is only one banner displaying on the platform. Use the [terra-service-banner-remove](https://fcprod-jenkins.dsp-techops.broadinstitute.org/job/terra-service-banner-remove/) job if more than one banner is up. See the [Terra Multi-Banner Readme](https://docs.google.com/document/d/16Av62pb1Dk6FiwqvhbcNE1hWq9WdLcP9iWvK-lZQmd0/edit#) for more details about these jobs.
 - <input type='checkbox'> <span style="color:red">`immediately`</span> **If the incident originated from PagerDuty, confirm that the PagerDuty incident was resolved or resolve it manually**
