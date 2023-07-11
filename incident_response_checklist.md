@@ -5,7 +5,8 @@ For the engineer managing a production incident. Visit [broad.io/tir](https://br
 - <input type='checkbox'> <span style="color:red">`immediately`</span> **If the incident originates in PagerDuty, acknowledge the event in PagerDuty and click *More Actions* -> *Create JIRA Issue* to create a ticket on the [Production Board](https://broadworkbench.atlassian.net/secure/RapidBoard.jspa?rapidView=88&projectKey=PROD)**
     - This will create a Jira bug that includes incident start-time.  Update the summary and description as needed and assign to yourself.
     - If the incident does NOT originate in PagerDuty, confirm that a Jira bug has been made or create one. 
-- <input type='checkbox'> <span style="color:red">`immediately`</span> **Change the Jira bug priority to Critical or Blocker based on our [SLA definitions](https://docs.google.com/spreadsheets/d/1Qcfve-nHlS0Udq31nZlfwBDjguhsJ8sxm0Q7RqfZM8o/edit#gid=0)**
+- <input type='checkbox'> <span style="color:red">`immediately`</span> **Change the Jira bug *Priority* to Critical or Blocker based on our [SLA definitions](https://docs.google.com/spreadsheets/d/1Qcfve-nHlS0Udq31nZlfwBDjguhsJ8sxm0Q7RqfZM8o/edit#gid=0)**
+    - The ticket will automatically be set to **Blocker** at creation time if it was not manually set to Critical or Blocker. Downgrade severity to **Critical** if it is the more appropriate severity level.
 - <input type='checkbox'> <span style="color:red">`immediately`</span> **Move the Jira bug to "In Progress" status**
 - <input type='checkbox'> <span style="color:red">`immediately`</span> **Mention in the #workbench-resilience ticket thread that you are investigating the issue.** 
 - <input type='checkbox'> <span style="color:red">`immediately`</span> **Notify users of the incident**
