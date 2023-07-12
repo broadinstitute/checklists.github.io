@@ -5,7 +5,8 @@ For the engineer managing a production incident. Visit [broad.io/tir](https://br
 - <input type='checkbox'> <span style="color:red">`immediately`</span> **If the incident originates in PagerDuty, acknowledge the event in PagerDuty and click *More Actions* -> *Create JIRA Issue* to create a ticket on the [Production Board](https://broadworkbench.atlassian.net/secure/RapidBoard.jspa?rapidView=88&projectKey=PROD)**
     - This will create a Jira bug that includes incident start-time.  Update the summary and description as needed and assign to yourself.
     - If the incident does NOT originate in PagerDuty, confirm that a Jira bug has been made or create one. 
-- <input type='checkbox'> <span style="color:red">`immediately`</span> **Change the Jira bug priority to Critical or Blocker based on our [SLA definitions](https://docs.google.com/spreadsheets/d/1Qcfve-nHlS0Udq31nZlfwBDjguhsJ8sxm0Q7RqfZM8o/edit#gid=0)**
+- <input type='checkbox'> <span style="color:red">`immediately`</span> **Change the Jira bug *Priority* to Critical or Blocker based on our [SLA definitions](https://docs.google.com/spreadsheets/d/1Qcfve-nHlS0Udq31nZlfwBDjguhsJ8sxm0Q7RqfZM8o/edit#gid=0)**
+    - The ticket will automatically be set to **Blocker** at creation time if it was not manually set to Critical or Blocker. Downgrade severity to **Critical** if it is the more appropriate severity level.
 - <input type='checkbox'> <span style="color:red">`immediately`</span> **Move the Jira bug to "In Progress" status**
 - <input type='checkbox'> <span style="color:red">`immediately`</span> **Mention in the #workbench-resilience ticket thread that you are investigating the issue.** 
 - <input type='checkbox'> <span style="color:red">`immediately`</span> **Notify users of the incident**
@@ -29,7 +30,11 @@ For the engineer managing a production incident. Visit [broad.io/tir](https://br
     - This will automatically create an Epic to track incident review actions and link the Bug.
     - Link any additional remediation tasks as issues in the **Bug** ticket. 
 - <input type='checkbox'> <span style="color:red">`immediately`</span> **If a banner has been put up, confirm that it gets taken down.** 
-   - During off-hours: Take down the banner by running the [terra-service-banner-clear](https://fcprod-jenkins.dsp-techops.broadinstitute.org/job/terra-service-banner-clear/) job if there is only one banner displaying on the platform. Use the [terra-service-banner-remove](https://fcprod-jenkins.dsp-techops.broadinstitute.org/job/terra-service-banner-remove/) job if more than one banner is up. See the [Terra Multi-Banner Readme](https://docs.google.com/document/d/16Av62pb1Dk6FiwqvhbcNE1hWq9WdLcP9iWvK-lZQmd0/edit#) for more details about these jobs.
+    - Daytime: Ping the Terra support specialist or @terrasupport in the #workbench-resilience issue thread to let them know that the issue is Remediated and that the banner can be taken down.
+    - During off-hours:
+        1. Connect to VPN (either split or non-split) using Cisco AnyConnect or your VPN client of choice
+        2. Navigate to https://fcprod-jenkins.dsp-techops.broadinstitute.org and log in
+        3. Take down the banner by running the [terra-service-banner-clear](https://fcprod-jenkins.dsp-techops.broadinstitute.org/job/terra-service-banner-clear/) job if there is only one banner displaying on the platform. Use the [terra-service-banner-remove](https://fcprod-jenkins.dsp-techops.broadinstitute.org/job/terra-service-banner-remove/) job if more than one banner is up. See the [Terra Multi-Banner Readme](https://docs.google.com/document/d/16Av62pb1Dk6FiwqvhbcNE1hWq9WdLcP9iWvK-lZQmd0/edit#) for more details about these jobs.
 - <input type='checkbox'> <span style="color:red">`immediately`</span> **If the incident originated from PagerDuty, confirm that the PagerDuty incident was resolved or resolve it manually**
 - <input type='checkbox'> <span style="color:gold">`1-2 days`</span> **Update the Jira bug with relevant information**
     - Update the ***DateTime Issue Introduced*** field with the time the issue was introduced to production. If unknown, use the time of the first user report.
