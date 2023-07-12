@@ -30,7 +30,11 @@ For the engineer managing a production incident. Visit [broad.io/tir](https://br
     - This will automatically create an Epic to track incident review actions and link the Bug.
     - Link any additional remediation tasks as issues in the **Bug** ticket. 
 - <input type='checkbox'> <span style="color:red">`immediately`</span> **If a banner has been put up, confirm that it gets taken down.** 
-   - During off-hours: Take down the banner by running the [terra-service-banner-clear](https://fcprod-jenkins.dsp-techops.broadinstitute.org/job/terra-service-banner-clear/) job if there is only one banner displaying on the platform. Use the [terra-service-banner-remove](https://fcprod-jenkins.dsp-techops.broadinstitute.org/job/terra-service-banner-remove/) job if more than one banner is up. See the [Terra Multi-Banner Readme](https://docs.google.com/document/d/16Av62pb1Dk6FiwqvhbcNE1hWq9WdLcP9iWvK-lZQmd0/edit#) for more details about these jobs.
+    - Daytime: Ping the Terra support specialist or @terrasupport in the #workbench-resilience issue thread to let them know that the issue is Remediated and that the banner can be taken down.
+    - During off-hours:
+        1. Connect to VPN (either split or non-split) using Cisco AnyConnect or your VPN client of choice
+        2. Navigate to https://fcprod-jenkins.dsp-techops.broadinstitute.org and log in
+        3. Take down the banner by running the [terra-service-banner-clear](https://fcprod-jenkins.dsp-techops.broadinstitute.org/job/terra-service-banner-clear/) job if there is only one banner displaying on the platform. Use the [terra-service-banner-remove](https://fcprod-jenkins.dsp-techops.broadinstitute.org/job/terra-service-banner-remove/) job if more than one banner is up. See the [Terra Multi-Banner Readme](https://docs.google.com/document/d/16Av62pb1Dk6FiwqvhbcNE1hWq9WdLcP9iWvK-lZQmd0/edit#) for more details about these jobs.
 - <input type='checkbox'> <span style="color:red">`immediately`</span> **If the incident originated from PagerDuty, confirm that the PagerDuty incident was resolved or resolve it manually**
 - <input type='checkbox'> <span style="color:gold">`1-2 days`</span> **Update the Jira bug with relevant information**
     - Update the ***DateTime Issue Introduced*** field with the time the issue was introduced to production. If unknown, use the time of the first user report.
